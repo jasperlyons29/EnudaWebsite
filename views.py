@@ -5,15 +5,18 @@ from .models import TextPieceServices
 
 # Create your views here.
 def home(request):
-
+	'kk'
 
 	who_we_are = TextPieceAbout.objects.all()[0]
 	who_we_are_detail_left = TextPieceAbout.objects.all()[1]
 	who_we_are_detail_right = TextPieceAbout.objects.all()[2]
+	
 	curric_tagline = TextPieceServices.objects.all()[0]
 	curric_detail_1 = TextPieceServices.objects.all()[1]
 	curric_detail_2 = TextPieceServices.objects.all()[2]
+	
 	nav_obj = Navigation.objects.first()
+	
 	context = {'nav': nav_obj, 
 			   'who_we_are': who_we_are,
 			   'who_we_are_detail_left': who_we_are_detail_left,
