@@ -1,29 +1,14 @@
 from django.shortcuts import render
-from .models import Navigation
-from .models import TextPieceAbout
-from .models import TextPieceServices
+from .models import Navigation, SecondSection, ThirdSection
+
 
 # Create your views here.
 def home(request):
-	'kk'
+    second_section = SecondSection.objects.first()
+    third_section = ThirdSection.objects.first()
+    nav_obj = Navigation.objects.first()
+    context = {'nav': nav_obj,
+               'second_section': second_section,
+               'third_section': third_section}
 
-	who_we_are = TextPieceAbout.objects.all()[0]
-	who_we_are_detail_left = TextPieceAbout.objects.all()[1]
-	who_we_are_detail_right = TextPieceAbout.objects.all()[2]
-	
-	curric_tagline = TextPieceServices.objects.all()[0]
-	curric_detail_1 = TextPieceServices.objects.all()[1]
-	curric_detail_2 = TextPieceServices.objects.all()[2]
-	
-	nav_obj = Navigation.objects.first()
-	
-	context = {'nav': nav_obj, 
-			   'who_we_are': who_we_are,
-			   'who_we_are_detail_left': who_we_are_detail_left,
-			   'who_we_are_detail_right': who_we_are_detail_right,
- 			   'curric_tagline': curric_tagline,
-			   'curric_detail_1': curric_detail_1,
-			   'curric_detail_2': curric_detail_2
-		}
-
-	return render(request, "enuda_house_app/index.html", context)
+    return render(request, "enuda_house_app/index.html", context)

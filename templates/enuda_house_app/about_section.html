@@ -5,7 +5,7 @@
                 <div class="container relative">
                     
                     <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
-                        Who we are
+                        {{ second_section.title }}
                     </h2>
                     
                     <div class="section-text mb-50 mb-sm-20">
@@ -14,16 +14,16 @@
                             <div class="col-md-4 mb-md-40 mb-xs-30">
                             <blockquote class="mb-0">
                                 <p>
-                                   {{ who_we_are.text }}
+                                   {{ second_section.header }}
                                 </p>
                                 
                             </blockquote>
                             </div>
                             <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                            {{ who_we_are_detail_left.text }}
+                            {{ second_section.content_one }}
                             </div>
                             <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                            {{ who_we_are_detail_right.text }}
+                            {{ second_section.content_one }}
                             </div>
 
                         </div>
@@ -114,7 +114,7 @@
                                 
                                 <div class="team-item-image">
                                     
-                                    <img src="{% static 'enuda_house_app/images/team/team-3.jpg' %}" alt="" />
+                                    <img src="{{second_section.image_section_one.image.image.url}}" alt="" />
                                     
                                     <div class="team-item-detail">
                                         
