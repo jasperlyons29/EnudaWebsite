@@ -3,10 +3,17 @@ from .models import (
     Navigation,
     Icon,
     IconSection,
+    IconSectionTwo,
     ImageSection,
     TextSection,
     SecondSection,
-    ThirdSection)
+    ThirdSection,
+    FourthSection,
+    FifthSection,
+    SixthSection,
+    SeventhSection,
+    EighthSection)
+
 from .models_utils import Image, HighQualityImage
 
 
@@ -34,12 +41,35 @@ class IconSectionAdmin(admin.ModelAdmin):
                     'text_section_three',
                     'timestamp', 'updated']
 
+class IconSectionTwoAdmin(admin.ModelAdmin):
+    list_display = ['icon', 'text_section']
+
 
 
 class ThirdSectionAdmin(admin.ModelAdmin):
     list_display = ['first_icon_section', 'second_icon_section',
                     'third_icon_section', 'forth_icon_section',
                     'timestamp', 'updated']
+
+class FourthSectionAdmin(admin.ModelAdmin):
+    list_display = ['fourth_section_pic', 'content']
+
+class FifthSectionAdmin(admin.ModelAdmin):
+    list_display = ['name', 'intro_content',
+                    'header_one', 'header_two',
+                    'header_three', 'header_four']
+
+class SixthSectionAdmin(admin.ModelAdmin):
+    list_display = ['header', 'button']
+
+class SeventhSectionAdmin(admin.ModelAdmin):
+    list_display = ['first_icon_section', 'second_icon_section',
+                    'third_icon_section', 'fourth_icon_section',
+                    'fifth_icon_section', 'sixth_icon_section']
+
+class EighthSectionAdmin(admin.ModelAdmin):
+    list_display = ['header', 'quote_who_one', 
+                    'quote_who_two', 'quote_who_three']
 
 
 class ImageSectionAdmin(admin.ModelAdmin):
@@ -63,5 +93,11 @@ admin.site.register(ImageSection, ImageSectionAdmin)
 admin.site.register(SecondSection, SecondSectionAdmin)
 admin.site.register(Icon, IconAdmin)
 admin.site.register(ThirdSection, ThirdSectionAdmin)
+admin.site.register(FourthSection, FourthSectionAdmin)
+admin.site.register(FifthSection, FifthSectionAdmin)
+admin.site.register(SixthSection, SixthSectionAdmin)
+admin.site.register(SeventhSection, SeventhSectionAdmin)
+admin.site.register(EighthSection, EighthSectionAdmin)
 admin.site.register(TextSection, TextSectionAdmin)
 admin.site.register(IconSection, IconSectionAdmin)
+admin.site.register(IconSectionTwo, IconSectionTwoAdmin)

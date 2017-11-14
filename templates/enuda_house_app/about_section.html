@@ -23,7 +23,7 @@
                             {{ second_section.content_one }}
                             </div>
                             <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
-                            {{ second_section.content_one }}
+                            {{ second_section.content_two }}
                             </div>
 
                         </div>
@@ -40,14 +40,14 @@
                                 
                                 <div class="team-item-image">
                                     
-                                    <img src="{{ nav.logo_image.url }}" alt="" />
+                                    <img src="{{ second_section.image_section_one.image.image.url }}" alt="" />
                                     
                                     <div class="team-item-detail">
                                         
-                                        <h4 class="font-alt normal">Hello & Welcome!</h4>
+                                        <h4 class="font-alt normal">{{second_section.image_section_one.caption}}</h4>
                                         
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit lacus, a&nbsp;iaculis diam. 
+                                            {{second_second.image_section_one.sub_caption}} 
                                         </p>
                                         
                                        
@@ -77,14 +77,14 @@
                                 
                                 <div class="team-item-image">
                                     
-                                    <img src="{% static 'enuda_house_app/images/team/team-2.jpg' %}" alt="" />
+                                    <img src="{{ second_section.image_section_two.image.image.url }}" alt="" />
                                     
                                     <div class="team-item-detail">
                                         
-                                        <h4 class="font-alt normal">Nice to meet!</h4>
+                                        <h4 class="font-alt normal">{{ second_section.image_section_two.caption }}</h4>
                                         
                                         <p>
-                                            Curabitur augue, nec finibus mauris pretium eu. Duis placerat ex gravida nibh tristique porta.
+                                            {{ second_section.image_section_two.sub_caption }}
                                         </p>
                                         
                                        
@@ -114,14 +114,14 @@
                                 
                                 <div class="team-item-image">
                                     
-                                    <img src="{{second_section.image_section_one.image.image.url}}" alt="" />
+                                    <img src="{{second_section.image_section_three.image.image.url}}" alt="" />
                                     
                                     <div class="team-item-detail">
                                         
-                                        <h4 class="font-alt normal">Whats Up!</h4>
+                                        <h4 class="font-alt normal">{{ second_section.image_section_three.caption }}</h4>
                                         
                                         <p>
-                                            Adipiscing elit curabitur eu&nbsp;adipiscing lacus eu&nbsp;adipiscing lacus, a&nbsp;iaculis diam. 
+                                            {{ second_section.image_section_three.sub_caption }}
                                         </p>
                                         
                                        
