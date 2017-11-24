@@ -20,6 +20,7 @@ class ImageSection(TimeStampBaseModel):
         return self.image.image.name
 
 
+
 # Create your models here.
 class Navigation(NameTimeStampBaseModel):
     logo_image = models.FileField(null=True, blank=True,
@@ -28,6 +29,8 @@ class Navigation(NameTimeStampBaseModel):
                                                 null=True,
                                                 blank=True,
                                                 related_name="navigations")
+
+
 
 class SecondSection(TimeStampBaseModel):
     title = models.CharField(null=True, blank=True, max_length=300)
@@ -46,6 +49,10 @@ class SecondSection(TimeStampBaseModel):
                                           null=True,
                                           blank=True,
                                           related_name='image_sections_threes')
+    image_section_four = models.ForeignKey('ImageSection',
+                                           null=True,
+                                           blank=True,
+                                           related_name='background_images')
 
 
 class TextSection(TimeStampBaseModel):
@@ -116,6 +123,18 @@ class FifthSection(TimeStampBaseModel):
     header_two = models.CharField(null=True, blank=True, max_length=300)
     header_three = models.CharField(null=True, blank=True, max_length=300)
     header_four = models.CharField(null=True, blank=True, max_length=300)
+    picture_one = models.ForeignKey('ImageSection', null=True, blank=True,
+                                    related_name='fifth_section_pic_ones')
+    picture_two = models.ForeignKey('ImageSection', null=True, blank=True,
+                                    related_name='fifth_section_pic_twos')
+    picture_three = models.ForeignKey('ImageSection', null=True, blank=True,
+                                    related_name='fifth_section_pic_threes')
+    picture_four = models.ForeignKey('ImageSection', null=True, blank=True,
+                                    related_name='fifth_section_pic_fours')
+    picture_five = models.ForeignKey('ImageSection', null=True, blank=True,
+                                    related_name='fifth_section_pic_fives')
+    picture_six = models.ForeignKey('ImageSection', null=True, blank=True,
+                                    related_name='fifth_section_pic_sixes')
 
 class SixthSection(NameTimeStampBaseModel):
     header = models.CharField(null=True, blank=True, max_length=300)

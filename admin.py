@@ -57,7 +57,10 @@ class FourthSectionAdmin(admin.ModelAdmin):
 class FifthSectionAdmin(admin.ModelAdmin):
     list_display = ['name', 'intro_content',
                     'header_one', 'header_two',
-                    'header_three', 'header_four']
+                    'header_three', 'header_four',
+                    'picture_one', 'picture_two',
+                    'picture_three', 'picture_four',
+                    'picture_five', 'picture_six']
 
 class SixthSectionAdmin(admin.ModelAdmin):
     list_display = ['header', 'button']

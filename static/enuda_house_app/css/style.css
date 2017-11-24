@@ -3368,6 +3368,7 @@ a.logo:hover{
 .work-img{
     position: relative;
     overflow: hidden;
+    
 }
 .work-img img{
     width: 100%;

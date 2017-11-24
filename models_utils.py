@@ -138,3 +138,6 @@ class HighQualityImage(NameTimeStampBaseModel):
             return self.timestamp.strftime("%Y-%m-%d %H:%M:%S")
 
         return self.timestamp.strftime("%Y-%m-%d_%H:%M:%S")
+     
+    def __str__(self):
+        return self.name
