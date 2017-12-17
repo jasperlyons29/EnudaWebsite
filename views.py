@@ -6,11 +6,13 @@ from .models import (Navigation,
 					FifthSection,
 					SixthSection,
 					SeventhSection,
-          EighthSection)
+                    EighthSection,
+                    ContactSection,
+                    NavBar)
 
 
 # Create your views here.
-def home(request):
+def home(request, isChinese=None):
     second_section = SecondSection.objects.first()
     third_section = ThirdSection.objects.first()
     fourth_section = FourthSection.objects.first()
@@ -18,6 +20,8 @@ def home(request):
     sixth_section = SixthSection.objects.first()
     seventh_section = SeventhSection.objects.first()
     eighth_section = EighthSection.objects.first()
+    contact_section = ContactSection.objects.first()
+    nav_bar = NavBar.objects.first()
     nav_obj = Navigation.objects.first()
     context = {'nav': nav_obj,
                'second_section': second_section,
@@ -26,6 +30,9 @@ def home(request):
                'fifth_section': fifth_section,
                'sixth_section': sixth_section,
                'seventh_section': seventh_section,
-               'eighth_section': eighth_section}
+               'eighth_section': eighth_section,
+               'contact_section': contact_section,
+               'nav_bar': nav_bar,
+               'isChinese': isChinese}
 
     return render(request, "enuda_house_app/index.html", context)

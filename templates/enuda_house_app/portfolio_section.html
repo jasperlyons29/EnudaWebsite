@@ -2,17 +2,29 @@
 
 <section class="page-section pb-0" id="portfolio">
     <div class="relative">
-        
-        <h2 class="section-title font-alt mb-70 mb-sm-40">
-            Portfolio
+        <!-- {% if isChinese == "True"  and fifth_section.chinese_name %} -->
+ <!--   <h2 class="section-title font-alt mb-70 mb-sm-40">
+            {{ fifth_section.chinese_name }} -->
         </h2>
+        <!-- {% else %} -->
+        <h2 class="section-title font-alt mb-70 mb-sm-40">
+            {{ fifth_section.name }}
+        </h2>
+        <!-- {% endif %} -->
         
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    
+                    <!-- {% if isChinese == "True" and chinese_intro_content %} -->
+               <!-- <div class="section-text align-center mb-70 mb-xs-40">
+                        {{ fifth_section.chinese_intro_content }} -->
+
+                    <!-- {% else %} -->
+
                     <div class="section-text align-center mb-70 mb-xs-40">
                         {{ fifth_section.intro_content }}
+
+                    <!-- {% endif %} -->
                     
                 </div>
             </div>
@@ -20,10 +32,30 @@
         
         <!-- Works Filter -->                    
         <div class="works-filter font-alt align-center">
+        <!-- {% if isChinese == "True"  and fifth_section.chinese_header_one %} -->
+     <!--    <a href="#" class="filter active" data-filter="*">{{ fifth_section.chinese_header_one }}</a> -->
+        <!-- {% else %} -->
             <a href="#" class="filter active" data-filter="*">{{ fifth_section.header_one }}</a>
+        <!-- {% endif %} -->
+
+        <!-- {% if isChinese == "True"  and fifth_section.chinese_header_two %} -->
+     <!--   <a href="#lms" class="filter" data-filter=".lms">{{ fifth_section.chinese_header_two }}</a> -->
+        <!-- {% else %} -->
             <a href="#lms" class="filter" data-filter=".lms">{{ fifth_section.header_two }}</a>
+        <!-- {% endif %} -->
+
+        <!-- {% if isChinese == "True"  and fifth_section.chinese_header_three %} -->
+     <!--   <a href="#design" class="filter" data-filter=".curriculum">{{ fifth_section.chinese_header_three }}</a> -->
+        <!-- {% else %} -->
             <a href="#design" class="filter" data-filter=".curriculum">{{ fifth_section.header_three }}</a>
+        <!-- {% endif %} -->
+
+        <!-- {% if isChinese == "True"  and fifth_section.chinese_header_four %} -->
+     <!--   <a href="#photography" class="filter" data-filter=".photography">{{ fifth_section.chinese_header_four }}</a> -->
+        <!-- {% else %} -->
             <a href="#photography" class="filter" data-filter=".photography">{{ fifth_section.header_four }}</a>
+        <!-- {% endif %} -->
+
         </div>                    
         <!-- End Works Filter -->
         

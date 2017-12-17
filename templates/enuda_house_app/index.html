@@ -32,10 +32,19 @@
                 <div class="container relative">
                     
                     <div class="align-center">
+                    <!-- {% if isChinese == "True" and sixth_section.chinese_header %} -->
+                 <!--   <h3 class="banner-heading font-alt">{{ sixth_section.chinese_header }}</h3> -->
+                    <!-- {% else %} -->
                         <h3 class="banner-heading font-alt">{{ sixth_section.header }}</h3>
+                    <!-- {% endif %} -->
                         <div class="local-scroll">
+                    <!-- {% if isChinese == "True" and sixth_section.chinese_button %} -->
+                    <!--   <a href="#contact" class="btn btn-mod btn-w btn-medium btn-round">{{ sixth_section.chinese_button }}</a> -->
+                    <!-- {% else %} -->
                             <a href="#contact" class="btn btn-mod btn-w btn-medium btn-round">{{ sixth_section.button }}</a>
+                    <!-- {% endif %} -->
                         </div>
+                    
                     </div>
                     
                 </div>
@@ -60,10 +69,30 @@
                                 <div class="alt-features-icon">
                                     <span class="{{ seventh_section.first_icon_section.icon.name }}"></span>
                                 </div>
+
+                        <!-- {% if isChinese == "True" and seventh_section.first_icon_section.text_section.chinese_content %} -->
+                          <!--   <h3 class="alt-features-title font-alt">{{ seventh_section.first_icon_section.text_section.chinese_content }}</h3> -->
+
+                        <!-- {% else %} -->
+
                                 <h3 class="alt-features-title font-alt">{{ seventh_section.first_icon_section.text_section.content }}</h3>
+                        
+                        <!-- {% endif %} -->
+
+                        <!-- {% if isChinese == "True" and seventh_section.first_icon_section.text_section.chinese_content %} -->
+
+                         <!--   <div class="alt-features-descr align-left">
+                                    {{ seventh_section.first_icon_section.text_section.chinese_sub_content }}
+                                </div> -->
+
+                        <!-- {% else %} -->
+
                                 <div class="alt-features-descr align-left">
                                     {{ seventh_section.first_icon_section.text_section.sub_content }}
                                 </div>
+
+                        <!-- {% endif %} -->
+
                             </div>
                         </div>
                         <!-- End Features Item -->
@@ -74,10 +103,30 @@
                                 <div class="alt-features-icon">
                                     <span class="{{ seventh_section.second_icon_section.icon.name }}"></span>
                                 </div>
+
+                        <!-- {% if isChinese == "True" and seventh_section.second_icon_section.text_section.chinese_content %} -->
+
+                         <!--   <h3 class="alt-features-title font-alt">{{ seventh_section.second_icon_section.text_section.chinese_content }}</h3> -->
+
+                        <!-- {% else %} -->
+
                                 <h3 class="alt-features-title font-alt">{{ seventh_section.second_icon_section.text_section.content }}</h3>
+
+                        <!-- {% endif %} -->
+
+                        <!-- {% if isChinese == "True" and seventh_section.second_icon_section.text_section.chinese_sub_content %} -->        
                                 <div class="alt-features-descr align-left">
-                                   {{ seventh_section.second_icon_section.text_section.sub_content }}
+                                   {{ seventh_section.second_icon_section.text_section.chinese_sub_content }}
                                 </div>
+
+                        <!-- {% else %} -->
+
+                        <!--    <div class="alt-features-descr align-left">
+                                   {{ seventh_section.second_icon_section.text_section.sub_content }}
+                                </div> -->
+
+                        <!-- {% endif %} -->
+
                             </div>
                         </div>
                         <!-- End Features Item -->
@@ -88,11 +137,30 @@
                                 <div class="alt-features-icon">
                                     <span class="{{ seventh_section.third_icon_section.icon.name }}"></span>
                                 </div>
-                                <h3 class="alt-features-title font-alt">{{ seventh_section.third_icon_section.text_section.content }}</h3>
+                        <!-- {% if isChinese == "True" and seventh_section.third_icon_section.text_section.chinese_content %} -->
+
+                        <!--   <h3 class="alt-features-title font-alt">{{ seventh_section.third_icon_section.text_section.chinese_content }}</h3> -->
+
+                        <!-- {% else %} -->
+
+                               <h3 class="alt-features-title font-alt">{{ seventh_section.third_icon_section.text_section.content }}</h3> 
+                        <!-- {% endif %} --> 
+
+
+                        <!-- {% if isChinese == "True" and seventh_section.third_icon_section.text_section.chinese_sub_content %} -->
+
+                        <!--    <div class="alt-features-descr align-left">
+                                    {{ seventh_section.third_icon_section.text_section.chinese_sub_content }}
+                                </div> -->
+
+                        <!-- {% else %} -->
+
                                 <div class="alt-features-descr align-left">
                                     {{ seventh_section.third_icon_section.text_section.sub_content }}
                                 </div>
+                        <!-- {% endif %} -->
                             </div>
+                        
                         </div>
                         <!-- End Features Item -->
                         
@@ -102,10 +170,30 @@
                                 <div class="alt-features-icon">
                                     <span class="{{ seventh_section.fourth_icon_section.icon.name }}"></span>
                                 </div>
+
+                        <!-- {% if isChinese == "True" and seventh_section.fourth_icon_section.text_section.chinese_content %} -->
+                               
+                        <!--    <h3 class="alt-features-title font-alt">{{ seventh_section.fourth_icon_section.text_section.chinese_content }}</h3> -->
+
+                        <!-- {% else %} -->
+
                                 <h3 class="alt-features-title font-alt">{{ seventh_section.fourth_icon_section.text_section.content }}</h3>
+
+                        <!-- {% endif %} -->
+
+                        <!-- {% if isChinese == "True" and seventh_section.fourth_icon_section.text_section.chinese_sub_content %} -->
+
+                        <!--    <div class="alt-features-descr align-left">
+                                    {{ seventh_section.fourth_icon_section.text_section.chinese_sub_content }}
+                                </div> -->
+
+                        <!-- {% else %} -->
+
                                 <div class="alt-features-descr align-left">
                                     {{ seventh_section.fourth_icon_section.text_section.sub_content }}
                                 </div>
+                        <!-- {% endif %} -->
+
                             </div>
                         </div>
                         <!-- End Features Item -->
@@ -116,10 +204,31 @@
                                 <div class="alt-features-icon">
                                     <span class="{{ seventh_section.fifth_icon_section.icon.name }}"></span>
                                 </div>
+
+                        <!-- {% if isChinese == "True" and seventh_section.fifth_icon_section.text_section.chinese_content %} -->
+
+                        <!--    <h3 class="alt-features-title font-alt">{{ seventh_section.fifth_icon_section.text_section.chinese_content }}</h3> -->
+
+                        <!-- {% else %} -->
+
                                 <h3 class="alt-features-title font-alt">{{ seventh_section.fifth_icon_section.text_section.content }}</h3>
+
+                        <!-- {% endif %} -->
+
+                        <!-- {% if isChinese == "True" and seventh_section.fifth_icon_section.text_section.chinese_sub_content %} -->
+
+                        <!--    <div class="alt-features-descr align-left">
+                                    {{ seventh_section.fifth_icon_section.text_section.chinese_sub_content }}
+                                </div> -->
+
+                        <!-- {% else %} -->
+
                                 <div class="alt-features-descr align-left">
                                     {{ seventh_section.fifth_icon_section.text_section.sub_content }}
                                 </div>
+
+                        <!-- {% endif %} -->
+
                             </div>
                         </div>
                         <!-- End Features Item -->
@@ -130,10 +239,31 @@
                                 <div class="alt-features-icon">
                                     <span class="{{ seventh_section.sixth_icon_section.icon.name }}"></span>
                                 </div>
+                                
+                        <!-- {% if isChinese == "True" and seventh_section.sixth_icon_section.text_section.chinese_content %} -->
+
+                        <!--    <h3 class="alt-features-title font-alt">{{ seventh_section.sixth_icon_section.text_section.chinese_content }}</h3 -->
+
+                        <!-- {% else %} -->
+
                                 <h3 class="alt-features-title font-alt">{{ seventh_section.sixth_icon_section.text_section.content }}</h3>
+
+                        <!-- {% endif %} -->
+
+                        <!-- {% if isChinese == "True" and seventh_section.sixth_icon_section.text_section.chinese_sub_content %} -->
+
+                        <!--    <div class="alt-features-descr align-left">
+                                    {{ seventh_section.sixth_icon_section.text_section.chinese_sub_content }}
+                                </div> -->
+
+                        <!-- {% else %} -->
+
                                 <div class="alt-features-descr align-left">
                                     {{ seventh_section.sixth_icon_section.text_section.sub_content }}
                                 </div>
+
+                        <!-- {% endif %}
+
                             </div>
                         </div>
                         <!-- End Features Item -->
@@ -158,14 +288,46 @@
                                 <div class="section-icon">
                                     <span class="icon-quote"></span>
                                 </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">{{ eighth_section.header }}</h3>
+                                <!-- Section Title -->
+                        <!-- {% if isChinese == "True" and eighth_section.chinese_header %} -->
+
+                        <!--    <h3 class="small-title font-alt">{{ eighth_section.chinese_header }}</h3> -->
+
+                        <!-- {% else %} -->
+
+                                <h3 class="small-title font-alt">{{ eighth_section.header }}</h3>
+                        <!-- {% endif %} -->
+
+
                                 <blockquote class="testimonial white">
+
+                        <!-- {% if isChinese == "True" and eighth_section.quote_who_one.chinese_content %} -->
+
+                        <!--        <p>
+                                        {{ eighth_section.quote_who_one.chinese_content }}
+                                    </p> -->
+
+                        <!-- {% else %} -->
+
                                     <p>
                                         {{ eighth_section.quote_who_one.content }}
                                     </p>
+
+                        <!-- {% endif %} -->
+
+                        <!-- {% if isChinese == "True" and eighth_section.quote_who_one.chinese_sub_content %} -->
+
+                        <!--        <footer class="testimonial-author">
+                                        {{ eighth_section.quote_who_one.chinese_sub_content }}
+                                    </footer> -->
+
+                        <!-- {% else %} -->
+
                                     <footer class="testimonial-author">
                                         {{ eighth_section.quote_who_one.sub_content }}
                                     </footer>
+                        <!-- {% endif %} -->
+
                                 </blockquote>
                             </div>
                         </div>
@@ -182,14 +344,48 @@
                                 <div class="section-icon">
                                     <span class="icon-quote"></span>
                                 </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">{{ eighth_section.header }}</h3>
+                                <!-- Section Title -->
+
+                        <!-- {% if isChinese == "True" and eighth_section.chinese_header %} -->
+
+                        <!--    <h3 class="small-title font-alt">{{ eighth_section.chinese_header }}</h3> -->
+
+                        <!-- {% else %} -->
+
+                                <h3 class="small-title font-alt">{{ eighth_section.header }}</h3>
+
+                        <!-- {% endif %} -->
+
                                 <blockquote class="testimonial white">
+
+                        <!-- {% if isChinese == "True" and eighth_section.quote_who_two.chinese_content %} -->  
+
                                     <p>
                                         {{ eighth_section.quote_who_two.content }}
                                     </p>
+
+                        <!-- {% else %} -->
+
+                                    <p>
+                                        {{ eighth_section.quote_who_two.content }}
+                                    </p>
+
+                        <!-- {% endif %} -->
+
+                        <!-- {% if isChinese == "True" and eighth_section.quote_who_two.chinese_sub_content %} -->  
+
+                        <!--         <footer class="testimonial-author">
+                                        {{ eighth_section.quote_who_two.chinese_sub_content }}
+                                    </footer> -->
+
+                        <!-- {% else %} -->
+
                                     <footer class="testimonial-author">
                                         {{ eighth_section.quote_who_two.sub_content }}
                                     </footer>
+
+                        <!-- {% endif %} -->
+
                                 </blockquote>
                             </div>
                         </div>
@@ -206,14 +402,48 @@
                                 <div class="section-icon">
                                     <span class="icon-quote"></span>
                                 </div>
-                                <!-- Section Title --><h3 class="small-title font-alt">{{ eighth_section.header }}</h3>
+                                <!-- Section Title -->
+
+                        <!-- {% if isChinese == "True" and eighth_section.chinese_header %} -->
+
+                        <!--    <h3 class="small-title font-alt">{{ eighth_section.chinese_header }}</h3> -->
+
+                        <!-- {% else %} -->        
+
+                                <h3 class="small-title font-alt">{{ eighth_section.header }}</h3>
+
+                        <!-- {% endif %} -->
+
+                        <!-- {% if isChinese == "True" and eighth_section.quote_who_three.content %} -->
+
                                 <blockquote class="testimonial white">
+
+                            <!--    <p>
+                                        {{ eighth_section.quote_who_three.content }}
+                                    </p> -->
+
+                        <!-- {% else %} -->
+
                                     <p>
                                         {{ eighth_section.quote_who_three.content }}
                                     </p>
+
+                            <!-- {% endif %} -->
+
+                            <!-- {% if isChinese == "True" and eighth_section.quote_who_three.sub_content %} -->
+
+                            <!--    <footer class="testimonial-author">
+                                        {{ eighth_section.quote_who_three.sub_content }}
+                                    </footer> -->
+
+                            <!-- {% else %} -->
+
                                     <footer class="testimonial-author">
                                         {{ eighth_section.quote_who_three.sub_content }}
                                     </footer>
+
+                            <!-- {% endif %} -->
+
                                 </blockquote>
                             </div>
                         </div>

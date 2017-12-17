@@ -72,20 +72,40 @@
                         <a href="#top" class="logo">
                             
                         </a>
-                    </di
-                    <div class="mobile-nav">
-                        <i class="fa fa-bars"></i>
+                        
                     </div>
+                    
+                    
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist scroll-nav local-scroll">
-                            <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#about">About</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#news">News</a></li>
-                            <li><a href="#contact">contact</a></li>
-                            
+
+                         <!-- {% if isChinese == "True" and nav_bar.chinese_home %}  -->  
+                         <!--  <li><a href="#home">{{ nav_bar.chinese_home }}</a></li> -->
+                         <!-- {% else %} -->
+                                <li><a href="#home">{{ nav_bar.home }}</a></li>
+                         <!-- {% endif %} -->
+                         
+                         <!-- {% if isChinese == "True" and nav_bar.chinese_about %}  --> 
+                         <!--  <li><a href="#home">{{ nav_bar.chinese_about }}</a></li> -->
+                         <!-- {% else %} --> 
+                                <li><a href="#about">About</a></li>
+                         <!-- {% endif %} -->
+                         <!-- {% if isChinese == "True" and nav_bar.chinese_services %}  -->        
+                         <!--  <li><a href="#home">{{ nav_bar.chinese_services }}</a></li> -->
+                         <!-- {% else %} -->       
+                                <li><a href="#services">Services</a></li>
+                         <!-- {% endif %} -->
+                         <!-- {% if isChinese == "True" and nav_bar.chinese_portfolio %}  -->        
+                         <!--  <li><a href="#home">{{ nav_bar.chinese_portfolio }}</a></li> --> 
+                         <!-- {% else %} -->      
+                                <li><a href="#portfolio">Portfolio</a></li>
+                         <!-- {% endif %} -->    
+                         <!-- {% if isChinese == "True" and nav_bar.chinese_contact %}  --> 
+                         <!--  <li><a href="#home">{{ nav_bar.chinese_contact}}</a></li> -->
+                         <!-- {% else %} -->       
+                                <li><a href="#contact">contact</a></li> 
+                         <!-- {% endif %} -->
                             
                             
                         </ul>
@@ -103,10 +123,22 @@
             <!-- Contact Section -->
             <section class="page-section" id="contact">
                 <div class="container relative">
-                    
+
+
+                    <!-- {% if isChinese == "True" and contact_section.chinese_title %}  -->
+
+                    <!-- <h2 class="section-title font-alt mb-70 mb-sm-40">
+                      {{ contact_section.chinese_title }}
+                    </h2> -->
+
+                    <!-- {% else %} -->
+
                     <h2 class="section-title font-alt mb-70 mb-sm-40">
-                        Contact
+                      <span data-chinese="{{contact_section.chinese_title}}">{{ contact_section.title }}    </span>
                     </h2>
+
+                    <!-- {% endif %} -->
+
                     
                     <div class="row mb-60 mb-xs-40">
                         
@@ -122,12 +154,39 @@
                                         <div class="ci-icon">
                                             <i class="fa fa-map-marker"></i>
                                         </div>
+                                        
+
+                                <!-- {% if isChinese == "True" and contact_section.chinese_address_header %}  -->
+
+                                        <!--  <div class="ci-title font-alt">
+                                            {{ contact_section.chinese_address_header }}
+                                        </div> -->
+
+                                <!-- {% else %} -->
+
                                         <div class="ci-title font-alt">
-                                            Address
+                                            {{ contact_section.address_header }}
                                         </div>
+
+                                <!-- {% endif %} -->
+
+                                <!-- {% if isChinese == "True" and contact_section.chinese_address %}  -->                                 
+ 
+
+                                 <!--   <div class="ci-text">
+                                            {{ contact_section.chinese_address }}
+                                        </div> -->
+
+                                <!-- {% else %} -->
+
                                         <div class="ci-text">
-                                            Chengdu
+                                            {{ contact_section.address }}
                                         </div>
+
+                                <!-- {% endif %} -->
+
+                                
+
                                     </div>
                                 </div>
                                 <!-- End Address -->
@@ -138,12 +197,35 @@
                                         <div class="ci-icon">
                                             <i class="fa fa-envelope"></i>
                                         </div>
+
+                                <!-- {% if isChinese == "True" and contact_section.chinese_email_header %}  -->
+
+                                <!--   <div class="ci-title font-alt">
+                                            {{ contact_section.chinese_email_header }}
+                                        </div> -->
+
+                                <!-- {% else %} -->
+
                                         <div class="ci-title font-alt">
-                                            Email
+                                            {{ contact_section.email_header }}
                                         </div>
+
+                                <!--{% endif %} -->
+
+                                  
+                                <!-- {% if isChinese == "True" and contact_section.chinese_email %}  -->
+
+                                <!--  <div class="ci-text">
+                                            <a href="mailto:support@bestlooker.pro">{{ contact_section.chinese.email }}</a>
+                                        </div> -->
+
+                                <!-- {% else %} -->  
                                         <div class="ci-text">
-                                            <a href="mailto:support@bestlooker.pro">support@enudahouse.com</a>
+                                            <a href="mailto:support@bestlooker.pro">{{ contact_section.email }}</a>
                                         </div>
+                                <!-- {% endif %} -->
+
+
                                     </div>
                                 </div>
                                 <!-- End Email -->

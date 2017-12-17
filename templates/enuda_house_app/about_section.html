@@ -4,27 +4,65 @@
             <section class="page-section" id="about">
                 <div class="container relative">
                     
+            <!-- {% if isChinese == "True" and second_section.chinese_title %} -->
+
+               <!-- <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+                        {{ second_section.chinese_title }}
+                    </h2> -->
+
+            <!-- {% else %} -->
+
                     <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
                         {{ second_section.title }}
                     </h2>
+            <!-- {% endif %} -->
                     
                     <div class="section-text mb-50 mb-sm-20">
                         <div class="row">
                         
                             <div class="col-md-4 mb-md-40 mb-xs-30">
                             <blockquote class="mb-0">
+                                
+            <!-- {% if isChinese == "True" and second_section.chinese_header %} -->
+
+                         <!--   <p>
+                                   {{ second_section.chinese_header }}
+                                </p> -->
+
+            <!-- {% else %} -->
+
                                 <p>
                                    {{ second_section.header }}
                                 </p>
+            <!-- {% endif %} -->
                                 
                             </blockquote>
                             </div>
+           
+            <!-- {% if isChinese == "True" and second_section.chinese_content_one %} -->
+
+                      <!--  <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            {{ second_section.chinese_content_one }}
+                            </div> -->
+
+            <!-- {% else %} -->
+
                             <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
                             {{ second_section.content_one }}
                             </div>
+            <!-- {% endif %} -->
+
+            <!-- {% if isChinese == "True" and second_section.chinese_content_two %} -->    
+
+                <!--        </div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                            {{ second_section.chinese_content_two }}
+                            </div> -->
+            <!-- {% else %} -->
+
                             <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
                             {{ second_section.content_two }}
                             </div>
+            <!-- {% endif %} -->
 
                         </div>
                             
@@ -44,11 +82,25 @@
                                     
                                     <div class="team-item-detail">
                                         
+
+                                        <!-- {% if isChinese == "True" and second_section.image_section_one.chinese_caption %} -->
+                                  <!--  <h4 class="font-alt normal">{{second_section.image_section_one.chinese_caption}}</h4> -->
+                                        <!-- {% else %} -->
                                         <h4 class="font-alt normal">{{second_section.image_section_one.caption}}</h4>
+                                        <!-- {% endif %} -->
                                         
+
+                                        <!-- {% if isChinese == "True" and second_section.image_section_one.chinese_sub_caption %} -->
+                                   <!-- <p>
+                                            {{second_section.image_section_one.chinese_sub_caption}} 
+                                        </p> -->
+                                        <!-- {% else %} -->
                                         <p>
-                                            {{second_second.image_section_one.sub_caption}} 
+                                            {{second_section.image_section_one.sub_caption}} 
                                         </p>
+                                        <!-- {% endif %} -->
+
+
                                         
                                        
                                         
@@ -81,11 +133,25 @@
                                     
                                     <div class="team-item-detail">
                                         
+
+                                        <!-- {% if isChinese == "True" and second_section.image_section_two.chinese_caption %} -->
+                                <!--    <h4 class="font-alt normal">{{ second_section.image_section_two.chinese_caption }}</h4> -->
+                                        <!-- {% else %} -->
                                         <h4 class="font-alt normal">{{ second_section.image_section_two.caption }}</h4>
+                                        <!-- {% endif %} -->
                                         
+
+                                        <!-- {% if isChinese == "True" and second_section.image_section_two.chinese_sub_caption %} -->
+                                <!--    <p>
+                                            {{ second_section.image_section_two.chinese_sub_caption }}
+                                        </p> -->
+
+                                        <!-- {% else %} -->
+
                                         <p>
                                             {{ second_section.image_section_two.sub_caption }}
                                         </p>
+                                        <!-- {% endif %} -->
                                         
                                        
                                         
@@ -118,11 +184,25 @@
                                     
                                     <div class="team-item-detail">
                                         
+
+                                        <!-- {% if isChinese == "True" and second_section.image_section_three.chinese_caption %} -->
+                                 <!--   <h4 class="font-alt normal">{{ second_section.image_section_three.chinese_caption }}</h4> -->
+                                        <!-- {% else %} -->
                                         <h4 class="font-alt normal">{{ second_section.image_section_three.caption }}</h4>
+                                        <!-- {% endif %} -->
                                         
+
+                                        <!-- {% if isChinese == "True" and second_section.image_section_three.chinese_sub_caption  %} -->
+                                 <!--   <p>
+                                            {{ second_section.image_section_three.chinese_sub_caption }}
+                                        </p> -->
+
+                                        <!-- {% else %} -->
+
                                         <p>
                                             {{ second_section.image_section_three.sub_caption }}
                                         </p>
+                                        <!-- {% endif %} -->
                                         
                                        
                                         

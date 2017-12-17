@@ -8,13 +8,35 @@
                 
                 <div class="mt-140 mt-lg-80 mb-140 mb-lg-80">
                     <div class="banner-content">
+
+                <!-- {% if isChinese == "True" and fourth_section.content.chinese_content %} -->
+                <!--    <h3 class="banner-heading font-alt">{{ fourth_section.content.chinese_content }}</h3> -->
+                <!-- {% else %} -->
                         <h3 class="banner-heading font-alt">{{ fourth_section.content.content }}</h3>
+                <!-- {% endif %} -->
+
+                <!-- {% if isChinese == "True" and fourth_section.content.chinese_sub_content %} -->                    
+
+                <!--    <div class="banner-decription">
+                            {{ fourth_section.content.chinese_sub_content }}
+                        </div> -->
+
+                <!-- {% else %} -->
+
                         <div class="banner-decription">
                             {{ fourth_section.content.sub_content }}
                         </div>
+
+                <!-- {% endif %} -->
+
+                
+
                         <div class="local-scroll">
-                            <a href="#contact" class="btn btn-mod btn-w btn-medium btn-round">Lets talk</a>
+                            <a href="#contact" class="btn btn-mod btn-w btn-medium btn-round">{{ fourth_section.button }}</a>
                         </div>
+
+                
+
                     </div>
                 </div>
                 
